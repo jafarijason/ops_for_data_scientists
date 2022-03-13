@@ -291,6 +291,12 @@ sudo ufw show added
 sudo ufw enable
 ```
 
+
+## create password for root user
+```
+sudo passwd root
+```
+
 ## make root user can login with ssh [#](https://www.liquidweb.com/kb/enable-root-login-via-ssh/)
 
 ```
@@ -303,8 +309,13 @@ PermitRootLogin yes
 ctrl + x for save and yes
 
 ```
-systemctl restart sshd
-service sshd restart
+sudo systemctl restart sshd
+sudo service sshd restart
+```
+
+## reboot
+```
+sudo reboot
 ```
 
 ## generate ssh key for your user
