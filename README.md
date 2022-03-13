@@ -10,6 +10,8 @@ Ops for data scientists
 
 [https://linuxjourney.com/lesson/touch-command](https://linuxjourney.com/lesson/touch-command)
 
+[https://www.redhat.com/en/topics/linux](https://www.redhat.com/en/topics/linux)
+
 <br >
 <br >
 <br >
@@ -62,6 +64,8 @@ We recommend [installable versions of GNU](https://www.gnu.org/distros/free-dist
 <br>
 
 ## What is linux?
+
+you can find simple answer [here](https://www.redhat.com/en/topics/linux)
 
 <ul>
     <li>
