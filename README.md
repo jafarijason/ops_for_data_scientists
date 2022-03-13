@@ -528,6 +528,18 @@ man whoami
 whoami
 ```
 
+## whatis
+
+```
+whatis ls
+whatis cat
+whatis bash
+```
+
+## man
+```
+man ls
+```
 
 
 
