@@ -168,7 +168,8 @@ But with great power and flexibility comes a great ability to shoot yourself in 
 <br>
 <br>
 <br>
-<img src="https://distrowatch.com/images/other/distro-family-tree.png" />
+![alt text](https://distrowatch.com/images/other/distro-family-tree.png)
+<img src="" />
 <br>
 <br>
 <br>
