@@ -345,6 +345,15 @@ then you need to add remote ssh extension on your vs code
 <img src="imgs/vscode-ssh4.png" />
 <img src="imgs/vscode-ssh5.png" />
 
+once you connect it you have open vscode in your linux machine and you can do what ever you want
+
+<br>
+
+```
+cd < target folder >
+code .
+```
+
 
 # add hostname
 
