@@ -202,4 +202,24 @@ Working on a remote linux instance is often a great way of becoming familiar wit
 
 
 
+## hollywood Genact  Blessed-contrib
+
+```
+sudo apt update
+sudo apt install hollywood byobu
+```
+```
+hollywood
+hollywood -s 4
+hollywood -q
+```
+
+## apt or apt-get
+
+```
+sudo apt update
+sudo apt upgrade
+sudo apt install <package>
+sudo apt remove <package>
+```
 
