@@ -218,6 +218,12 @@ hollywood -q
 
 For more information [hollywood](https://github.com/dustinkirkland/hollywood), [Genact](https://github.com/svenstaro/genact), [Blessed-contrib](https://github.com/yaronn/blessed-contrib)
 
+
+
+# Prepare environment
+
+
+
 ## apt or apt-get
 
 ```
@@ -354,6 +360,36 @@ sudo apt install git
 ```
 node_modules
 ```
+
+## [Execute sudo without Password?](https://askubuntu.com/questions/147241/execute-sudo-without-password)
+
+
+```
+sudo visudo
+```
+
+```
+YOUR_USERNAME_HERE ALL=(ALL) NOPASSWD: ALL
+```
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
