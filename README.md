@@ -168,8 +168,8 @@ But with great power and flexibility comes a great ability to shoot yourself in 
 <br>
 <br>
 <br>
-![alt text](https://distrowatch.com/images/other/distro-family-tree.png)
-<img src="" />
+
+<img src="imgs/distro-family-tree.png" />
 <br>
 <br>
 <br>
