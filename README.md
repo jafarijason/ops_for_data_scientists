@@ -326,6 +326,37 @@ copy the content and add it in what ever service (in this case git hub ) you are
 <img src="imgs/ssh-github2.png" />
 <img src="imgs/ssh-github3.png" />
 
+if you don`t want to add password every time you can copy your os public ssh key in to your linux
+
+```
+ssh-copy-id <user name>@<ip or host name>
+```
+
+
+
+## git config
+
+```
+sudo apt install git
+
+```
+
+~/.gitconfig
+```
+[user]
+	email = <your email in github>
+	name = <your name>
+[core]
+	excludesFile = ~/.gitignore
+
+```
+
+~/.gitignore
+```
+node_modules
+```
+
+
 ```
 cd
 mkdir gitHub
@@ -415,28 +446,6 @@ source $ZSH/oh-my-zsh.sh
 add zsh at the end of ~/.bashrc
 
 
-
-## git config
-
-```
-sudo apt install git
-
-```
-
-~/.gitconfig
-```
-[user]
-	email = <your email in github>
-	name = <your name>
-[core]
-	excludesFile = ~/.gitignore
-
-```
-
-~/.gitignore
-```
-node_modules
-```
 
 ## [Execute sudo without Password?](https://askubuntu.com/questions/147241/execute-sudo-without-password)
 
