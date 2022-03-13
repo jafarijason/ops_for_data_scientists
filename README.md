@@ -339,8 +339,8 @@ sudo apt install git
 ~/.gitconfig
 ```
 [user]
-	email = me@jasonjafari.com
-	name = Jason Jafari
+	email = <your email in github>
+	name = <your name>
 [core]
 	excludesFile = ~/.gitignore
 
