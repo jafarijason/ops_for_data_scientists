@@ -459,10 +459,50 @@ YOUR_USERNAME_HERE ALL=(ALL) NOPASSWD: ALL
 ```
 
 
+# Useful commands
 
+## echo, date, whoami
 
+### echo
+```
+echo "Hello World! "
+VAR="Ops for data scientists"
+echo $VAR
+VAR="Test for re define variable"
+echo $VAR
 
+A=2
+B=3
+C=$A+$B
+echo $C
+C=`expr $A + $B`
+echo $C
+C=$(expr $A + $B)
+echo $C
+C=$(($A + $B))
+echo $C
+```
 
+example for bash file
+
+```
+cat ./bash/sum.sh
+bash ./bash/sum.sh 10 11
+sh ./bash/sum.sh 10 11
+
+chmod +x ./bash/sum.sh
+./bash/sum.sh 10 11
+```
+example2  for bash file
+
+```
+cat ./bash/sum2.sh
+bash ./bash/sum2.sh
+sh ./bash/sum2.sh
+
+chmod +x ./bash/sum2.sh
+./bash/sum2.sh
+```
 
 
 
