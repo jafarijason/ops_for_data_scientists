@@ -331,6 +331,8 @@ cd
 mkdir gitHub
 cd gitHub
 git clone git@github.com:jafarijason/ops_for_data_scientists.git
+cd ops_for_data_scientists
+
 ```
 
 # add hostname
