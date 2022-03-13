@@ -245,12 +245,12 @@ For more information [hollywood](https://github.com/dustinkirkland/hollywood), [
     </li>
 </ul>
 
-## install virtualbox
+## Install virtualbox
 you can download it [here](https://www.virtualbox.org/wiki/Downloads) based on your os
 
 <img src="imgs/virtualbox.png" />
 
-## download .iso file
+## Download .iso file
 In this course we want to work with ubuntu [desktop](https://ubuntu.com/download/desktop) and [server](https://ubuntu.com/download/server)
 
 
@@ -320,7 +320,9 @@ sudo apt-get update
 sudo apt-get upgrade -y
 ```
 
-## zsh anf oh-my-zsh
+## Zsh and oh-my-zsh [#](https://ohmyz.sh/)
+
+
 
 ```
 sudo apt install zsh
@@ -343,9 +345,6 @@ rsync
 aws
 cp
 dash
-node
-npm
-npx
 pep8
 pip
 pipenv
@@ -356,13 +355,9 @@ tmux
 ubuntu
 ufw
 aws
-nvm
-yarn
 )
 
-
 source $ZSH/oh-my-zsh.sh
-
 
 ```
 
