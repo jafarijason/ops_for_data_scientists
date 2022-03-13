@@ -291,7 +291,7 @@ sudo ufw show added
 sudo ufw enable
 ```
 
-# make root user can login with ssh [#](https://www.liquidweb.com/kb/enable-root-login-via-ssh/)
+## make root user can login with ssh [#](https://www.liquidweb.com/kb/enable-root-login-via-ssh/)
 
 ```
 sudo nano /etc/ssh/sshd_config
@@ -307,7 +307,7 @@ systemctl restart sshd
 service sshd restart
 ```
 
-# generate ssh key for your user
+## generate ssh key for your user
 
 ```
 cd ~/.ssh
@@ -334,6 +334,17 @@ git clone git@github.com:jafarijason/ops_for_data_scientists.git
 cd ops_for_data_scientists
 
 ```
+
+## Remote ssh with vscode
+First you need already installed [visual studio code](https://code.visualstudio.com/download)
+<br>
+then you need to add remote ssh extension on your vs code
+<img src="imgs/vscode-ssh1.png" />
+<img src="imgs/vscode-ssh2.png" />
+<img src="imgs/vscode-ssh3.png" />
+<img src="imgs/vscode-ssh4.png" />
+<img src="imgs/vscode-ssh5.png" />
+
 
 # add hostname
 
