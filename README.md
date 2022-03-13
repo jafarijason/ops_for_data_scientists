@@ -275,8 +275,8 @@ sudo hostname -F /etc/hostname
 
 ## update and upgrade
 ```
-apt-get update
-apt-get upgrade -y
+sudo apt-get update
+sudo apt-get upgrade -y
 ```
 
 ## zsh anf oh-my-zsh
