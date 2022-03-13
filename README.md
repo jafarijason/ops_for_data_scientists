@@ -465,6 +465,7 @@ YOUR_USERNAME_HERE ALL=(ALL) NOPASSWD: ALL
 
 ### echo
 ```
+man echo
 echo "Hello World! "
 VAR="Ops for data scientists"
 echo $VAR
@@ -503,6 +504,30 @@ sh ./bash/sum2.sh
 chmod +x ./bash/sum2.sh
 ./bash/sum2.sh
 ```
+
+### pwd
+
+```
+man pwd
+pwd
+cd .
+pwd
+cd ..
+pwd
+cd ...
+pwd
+cd ~
+pwd
+cd -
+```
+
+## whoami
+
+```
+man whoami
+whoami
+```
+
 
 
 
