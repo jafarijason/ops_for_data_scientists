@@ -214,6 +214,8 @@ hollywood -s 4
 hollywood -q
 ```
 
+For more information [hollywood](https://github.com/dustinkirkland/hollywood), [Genact](https://github.com/svenstaro/genact), [Blessed-contrib](https://github.com/yaronn/blessed-contrib)
+
 ## apt or apt-get
 
 ```
