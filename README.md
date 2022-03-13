@@ -117,6 +117,8 @@ Being open source leads to high quality, as bugs have fewer dark places to hide 
 
 But with great power and flexibility comes a great ability to shoot yourself in the foot. Linux makes that easy as well.
 
+<br>
+
 # Linux-like systems
 
 
@@ -138,4 +140,36 @@ But with great power and flexibility comes a great ability to shoot yourself in 
     </li>
 </ul>
 
+<br>
+
+# Linux Distributions / Distros
+
+<ul>
+    <li>
+        There are (too?) many flavours of “real Linux”, called distros or distributions. It can be a headache to differentiate them.
+    </li>
+    <li>
+        A distribution is like a "company", which invents a new operating system. They wrap the Linux Kernel with a new bundle of peripheral programs - i.e. they may use a different mix of GUI programs, support different hardware by default, etc. They release new versions occasionally.
+    </li>
+    <li>
+        Ubuntu. It’s the most user friendly, widely supported, and easy to install.
+    </li>
+    <li>
+        Red Hat Enterprise Linux, or RHEL, is a different distro which is used sometimes in heavy duty production servers.
+    </li>
+    <li>
+        Fedora is the desktop equivalent of RHEL - usually, developers aiming to run their applications on RHEL servers will use Fedora for their development computers, to avoid compatibility issues.
+    </li>
+    <li>
+        Alpine is a super minimal distro which is used for many Docker images.
+    </li>
+</ul>
+
+<br>
+<br>
+<br>
+<img src="https://distrowatch.com/images/other/distro-family-tree.png" />
+<br>
+<br>
+<br>
 <br>
