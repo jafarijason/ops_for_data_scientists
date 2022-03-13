@@ -17,7 +17,7 @@ Ops for data scientists
 <br >
 
 
-# how do you make the computer do what you want
+# How do you make the computer do what you want
 
 <ul>
     <li>
@@ -72,7 +72,7 @@ you can find simple answer [here](https://www.redhat.com/en/topics/linux)
         A family of open source operating systems.
     </li>
     <li>
-        Developed by Linus Torvalds, who also invented Git to manage the source code for Linux.
+        Developed by <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank">Linus Torvalds</a>, who also invented Git to manage the source code for Linux.
     </li>
     <li>
         An operating system is a program that takes over a bit after your computer turns on.
