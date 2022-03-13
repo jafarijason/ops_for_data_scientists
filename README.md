@@ -200,7 +200,9 @@ The linux command-line offers a stable of powerful tools that can really aid in 
 
 Working on a remote linux instance is often a great way of becoming familiar with the command-line as you are forced to use it and cannot fall back on Mac’s Finder to navigate the file-system.
 
+## Do you want to have terminal like this --vvv-- !!! be with me you will have it
 
+<img src="imgs/hollywood.png" />
 
 ## hollywood Genact  Blessed-contrib
 
