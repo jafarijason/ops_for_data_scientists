@@ -172,5 +172,34 @@ But with great power and flexibility comes a great ability to shoot yourself in 
 <img src="imgs/distro-family-tree.png" />
 <br>
 <br>
+
+[source](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
+
 <br>
 <br>
+
+## Interfaces
+
+<ul>
+    <li>
+        When people think of Linux, they usually associate it with a scary terminal (plus attached Anonymous hacker with a hoodie).
+    </li>
+    <li>
+        Don't Panic – it’s not so scary! Today, it’s really easy to install Linux on a computer, with a regular GUI wizard, if you pick a distro that cares about that sort of thing (for example, Ubuntu).
+    </li>
+    <li>
+        We'll focus on terminals / shells in this lecture, since that is always available, and generally where "real work" is done. Production servers will rarely have GUIs. Don't let that discourage you - after you get used to it, using the shell can become much more convenient than GUIs!
+    </li>
+</ul>
+
+## CLI
+
+The linux command-line offers a stable of powerful tools that can really aid in boosting productivity as well as gaining an understanding of the current state of your machine (i.e. disk-space, running processes, RAM, CPU-usage).
+
+<br>
+
+Working on a remote linux instance is often a great way of becoming familiar with the command-line as you are forced to use it and cannot fall back on Mac’s Finder to navigate the file-system.
+
+
+
+
