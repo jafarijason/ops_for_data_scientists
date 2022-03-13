@@ -271,9 +271,12 @@ sudo apt remove <package>
 ```
 sudo apt install openssh-server
 ```
+form your os terminal in case windows must installed git bash
+```
+ssh <username>@<ip address>
+```
 
-
-# firewall
+## firewall
 ```
 sudo nano /etc/default/ufw
 IPV6=yes
@@ -288,21 +291,47 @@ sudo ufw show added
 sudo ufw enable
 ```
 
-
+# make root user can login with ssh [#](https://www.liquidweb.com/kb/enable-root-login-via-ssh/)
 
 ```
-sudo su
-passwd root
-nano /etc/ssh/sshd_config
-
+sudo nano /etc/ssh/sshd_config
+```
+find PermitRootLogin in text ctrl + w and change it to
+```
 PermitRootLogin yes
+```
+ctrl + x for save and yes
 
-^ctrlx
-
+```
 systemctl restart sshd
 service sshd restart
 ```
 
+# generate ssh key for your user
+
+```
+cd ~/.ssh
+ls -la
+ssh-keygen
+```
+```
+cd ~/.ssh
+ls -la
+cat id_rsa.pub
+```
+<img src="imgs/publickey.png" />
+
+copy the content and add it in what ever service (in this case git hub ) you are using
+<img src="imgs/ssh-github1.png" />
+<img src="imgs/ssh-github2.png" />
+<img src="imgs/ssh-github3.png" />
+
+```
+cd
+mkdir gitHub
+cd gitHub
+git clone git@github.com:jafarijason/ops_for_data_scientists.git
+```
 
 # add hostname
 
