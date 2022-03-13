@@ -99,3 +99,43 @@ you can find simple answer [here](https://www.redhat.com/en/topics/linux)
         The thing that unites all the different operating systems in the Linux family is they all use the same Linux kernel - other parts differ. More on that later in the section about distributions.
     </li>
 </ul>
+<br>
+
+## [What is the Linux kernel?](https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel)
+
+<br>
+
+## What is Linux good for?
+
+<br>
+An operating system is, surprisingly, just a type of system. Systems are designed by humans, and better designs lead to better performance, stability, and flexibility. Linux is simply a better designed operating system. It's super flexible and stable - "blue screens of death" are exceedingly rare in production Linux servers, and their performance is very reliable. Which is why a vast majority of production systems run on Linux, and that's also why it's good for anyone working in tech to be Linux literate. That includes you, dear reader.
+<br>
+<br>
+
+Being open source leads to high quality, as bugs have fewer dark places to hide in. Developers can peer under the covers to make sure their Linux applications will work well, rather than guessing and relying on questionable documentation from closed source operating system developers.
+<br>
+
+But with great power and flexibility comes a great ability to shoot yourself in the foot. Linux makes that easy as well.
+
+# Linux-like systems
+
+
+<ul>
+    <li>
+        Mac and Unix are very similar to, but are not Linux technically. You will have a hard time telling the difference, unless you dive deep.
+    </li>
+    <li>
+        Unix is older than Linux and extremely similar - In fact, Linux is an open source re-implementation of Unix (which was closed source, but very good). This is pretty much historic trivia, as Unix is rarely seen nowadays, but know that some people use the words Unix and Linux interchangeably.
+    </li>
+    <li>
+        In general, there’s a name for operating systems that look and feel like Unix – POSIX compliant, or *nix. When you see these words, translate them as “follows the conventions of Linux, such as basic commands for file manipulation (ls, cd, mkdir) and "/" as the root of the file system etc.”
+    </li>
+    <li>
+        GNU is a large set of free software which is the foundation for much of Linux – compilers, C libraries, programs to zip files, and many others. It's also the name of an independent POSIX operating system, with more hardcore ideology around free software than Linux.
+    </li>
+    <li>
+        All of the above systems, as well as Linux itself, are examples of POSIX compliant or *nix systems.
+    </li>
+</ul>
+
+<br>
