@@ -142,7 +142,7 @@ But with great power and flexibility comes a great ability to shoot yourself in 
 
 <br>
 
-# Linux Distributions / Distros
+# [Linux Distributions / Distros](https://www.redhat.com/en/topics/linux/whats-the-best-linux-distro-for-you)
 
 <ul>
     <li>
