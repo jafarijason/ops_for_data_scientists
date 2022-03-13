@@ -222,6 +222,37 @@ For more information [hollywood](https://github.com/dustinkirkland/hollywood), [
 
 # Prepare environment
 
+# For having linux environment there are options
+
+<ul>
+    <li>
+        Standalone pc or lab-top have linux os on it
+    </li>
+    <li>
+        Using virtual machines(VM) install in your pc or lab-top
+    </li>
+    <li>
+        Having dedicate server in data-centers
+    </li>
+    <li>
+        Having VM in data-centers
+    </li>
+    <li>
+        Having VM in IaaS provider like AWS, GCP, Azure
+    </li>
+     <li>
+        Having container like docker lynx and etc
+    </li>
+</ul>
+
+## install virtualbox
+you can download it [here](https://www.virtualbox.org/wiki/Downloads) based on your os
+
+<img src="imgs/virtualbox.png" />
+
+## download .iso file
+In this course we want to work with ubuntu [desktop](https://ubuntu.com/download/desktop) and [server](https://ubuntu.com/download/server)
+
 
 
 ## apt or apt-get
