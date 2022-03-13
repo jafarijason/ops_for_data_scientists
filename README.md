@@ -223,3 +223,184 @@ sudo apt install <package>
 sudo apt remove <package>
 ```
 
+
+
+# ssh
+
+```
+sudo apt install openssh-server
+```
+
+
+# firewall
+```
+sudo nano /etc/default/ufw
+IPV6=yes
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+sudo ufw allow OpenSSH
+sudo ufw allow 22
+
+sudo ufw show added
+
+sudo ufw enable
+```
+
+
+
+```
+sudo su
+passwd root
+nano /etc/ssh/sshd_config
+
+PermitRootLogin yes
+
+^ctrlx
+
+systemctl restart sshd
+service sshd restart
+```
+
+
+# add hostname
+
+```
+export USE_HOSTNAME=<your host name>
+sudo echo $USE_HOSTNAME > /etc/hostname
+sudo hostname -F /etc/hostname
+
+
+```
+
+## update and upgrade
+```
+apt-get update
+apt-get upgrade -y
+```
+
+## zsh anf oh-my-zsh
+
+```
+sudo apt install zsh
+
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+~/.zshrc
+```
+
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="fino-time"
+
+plugins=(
+git
+docker
+docker-compose
+rsync
+aws
+cp
+dash
+node
+npm
+npx
+pep8
+pip
+pipenv
+postgres
+python
+sudo
+tmux
+ubuntu
+ufw
+aws
+nvm
+yarn
+)
+
+
+source $ZSH/oh-my-zsh.sh
+
+
+```
+
+add zsh at the end of ~/.bashrc
+
+
+
+## git config
+
+```
+sudo apt install git
+
+```
+
+~/.gitconfig
+```
+[user]
+	email = me@jasonjafari.com
+	name = Jason Jafari
+[core]
+	excludesFile = ~/.gitignore
+
+```
+
+~/.gitignore
+```
+node_modules
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## install docker
+
+```
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+
+```
+
+## install docker compose
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+docker-compose --version
+
+```
