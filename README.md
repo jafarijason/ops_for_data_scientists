@@ -472,6 +472,16 @@ sudo visudo
 YOUR_USERNAME_HERE ALL=(ALL) NOPASSWD: ALL
 ```
 
+# remote desktop on linux only desktop
+
+```
+sudo apt -y install xrdp tigervnc-standalone-server
+sudo systemctl enable xrdp
+sudo systemctl start xrdp
+sudo ufw allow 3389
+sudo ufw reload
+```
+
 
 # Useful commands
 
