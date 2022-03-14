@@ -591,7 +591,14 @@ history
 clear
 ```
 
-## cp, mv
+## mkdir
+```
+mkdir books paintings
+mkdir -p books/hemmingway/favorites
+
+```
+
+## cp, mv, rm
 
 ```
 cp ./imgs/distro-family-tree.png /tmp
@@ -603,9 +610,45 @@ cp -R imgs /tmp/test/imgs-copy
 
 mv /tmp/distro-family-tree.png /tmp/distro-family-tree2.png
 
+
+rm file1
+rm -f file1
+rm -i file
+rm -r directory
+
+
 rm -rf /tmp/test
 ```
 
+## ls 
+```
+ls 
+ls -la
+ls -hlS
+ls -lha
+```
+
+## uname
+```
+uname
+uname --help
+uname -a
+```
+
+## lsb_release 
+```
+lsb_release 
+lsb_release  --help
+```
+
+
+## watch
+```
+watch ls -la 
+
+watch ls -la  -3
+
+```
 
 
 
