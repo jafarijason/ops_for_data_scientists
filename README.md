@@ -797,6 +797,14 @@ sudo netstat -tulpn | grep LISTEN
 wall
 ```
 
+## find
+```
+find $(pwd) -name geolocation.csv
+find $(pwd) -type d -name data
+
+
+```
+
 
 ## dns server
 
