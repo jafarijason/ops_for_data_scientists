@@ -856,6 +856,9 @@ tree / | grep 'hollywood.png'
 cat /var/log/syslog
 cat /var/log/syslog | grep 'root'
 
+cat ./data/mm
+cat ./data/mm | grep -v -e '^$'
+
 ```
 
 # Basic analysis
