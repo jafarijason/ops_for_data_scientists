@@ -699,7 +699,32 @@ kill -9 PID
 
 ```
 
+## df
 
+```
+df 
+df -h 
+```
+
+## du
+```
+du
+du -d 2 -h 
+du -d 2 -h /
+du -d 2 -h /root
+```
+
+## scp
+```
+#scp stands for secure copy and is a useful command we can use to send files to and from a remote instance.
+#Send to remote:
+scp -i ~/.ssh/path/to_pem_file /path/to/local/file ubuntu@IPv4:./desired/file/location
+#recursively copy directories
+scp -i ~/.ssh/path/to_pem_file -r ubuntu@IPv4:./path/to/desired/folder/ ~/my_projects/
+#Download from remote:
+scp -i ~/.ssh/path/to_pem_file ubuntu@IPv4:./path/to/desired/file/   ~/my_projects/
+
+```
 
 
 ## nc 
@@ -786,6 +811,73 @@ DNS=<dns server 4.2.2.4>
 sudo systemctl restart systemd-resolved.service
 sudo systemctl status systemd-resolved.service
 systemd-resolve --status
+```
+
+
+# Acquire data
+## head /tail
+```
+head -n 5 ./data/geolocation.csv
+head -n -5 ./data/geolocation.csv
+tail -n 15 ./data/geolocation.csv
+tail -n -15 ./data/geolocation.csv
+
+```
+
+## column
+```
+column -s"," -t ./data/geolocation.csv
+column -s"," -t ./data/geolocation.csv | head
+column -s"," -t ./data/geolocation.csv | tail
+
+head -n 5 ./data/geolocation.csv | column -s"," -t
+
+```
+
+```
+cut -d"," -f2,5 ./data/geolocation.csv | head
+tail -n +1 ./data/geolocation.csv | sort -t"," -k1,1g -k2,2gr -k2,2
+```
+
+# Data cleaning
+
+## Drop columns
+```
+cut -d"," -f2,5 ./data/geolocation.csv > ./test/new_example_data1.csv
+```
+
+## Filtering with grep
+```
+grep -n 'Cal' ./data/geolocation.csv 
+grep -n 'Cal' ./data/geolocation.csv > ./test/new_example_data1.csv
+
+```
+
+# [Awk](https://www.gnu.org/software/gawk/manual/gawk.html), [example](https://www.tutorialspoint.com/awk/awk_basic_examples.htm)
+```
+# Printing Column or Field
+awk '{print $3 "\t" $4}' ./data/marks.txt
+awk '{print $0}' ./data/marks.txt
+
+# Printing All Lines
+awk '/a/'  ./data/marks.txt
+
+# Printing Columns by Pattern
+awk '/a/' {print $3 "\t" $4}' ./data/marks.txt
+
+# Printing Column in Any Order
+awk '/a/' {print $4 "\t" $3}' ./data/marks.txt
+
+# Counting and Printing Matched Pattern
+awk '/a/{++cnt} END {print "Count = ", cnt}' ./data/marks.txt
+```
+# [Sed](https://www.gnu.org/software/sed/manual/sed.html), [example1](https://www.geeksforgeeks.org/sed-command-in-linux-unix-with-examples/), [example2](https://linuxhint.com/50_sed_command_examples/)
+
+```
+sed 's/unix/linux/' ./data/sed_test.txt 
+
+echo "Welcome To The Geek Stuff" | sed 's/\(\b[A-Z]\)/\(\1\)/g'
+
 ```
 
 
