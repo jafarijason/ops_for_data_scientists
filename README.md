@@ -821,6 +821,15 @@ sudo systemctl status systemd-resolved.service
 systemd-resolve --status
 ```
 
+# Our Good Friend grep
+grep is a command-line tool that searches for patterns within a file. grep will print each line within the file that has a pattern match to standard output (terminal screen). This can be especially useful when we maybe want to model or perform EDA on a subset of our data with a given pattern:
+
+```
+grep -n 'California' ./data/geolocation.csv > ./test/new_example_data1.csv
+cat ./pythons/test1.py
+python3 ./pythons/test1.py 
+```
+
 # Basic analysis
 ## Word/symbol count
 
