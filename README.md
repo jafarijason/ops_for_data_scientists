@@ -717,7 +717,17 @@ crontab -e
 cat /etc/crontab
 
 #* * * * * /bin/bash /root/gitHub/ops_for_data_scientists/bash/crontab.sh
+```
 
+## at
+```
+sudo apt install at
+
+at 1pm +  2 days
+
+atq
+
+at rm <id>
 ```
 
 ## /etc/passwd, /etc/shadow
@@ -727,6 +737,21 @@ cat  /etc/passwd | less
 cat  /etc/shadow | less
 ```
 
+
+## dns server
+
+```
+# in past
+cat /etc/resolv.conf 
+
+
+sudo nano /etc/systemd/resolved.conf
+
+DNS=<dns server 4.2.2.4>
+sudo systemctl restart systemd-resolved.service
+sudo systemctl status systemd-resolved.service
+systemd-resolve --status
+```
 
 
 
