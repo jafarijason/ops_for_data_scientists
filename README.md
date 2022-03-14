@@ -767,6 +767,11 @@ sudo netstat -tulpn | grep LISTEN
 
 ```
 
+## wall
+```
+wall
+```
+
 
 ## dns server
 
