@@ -716,7 +716,7 @@ crontab -e
 
 cat /etc/crontab
 
-#touch /root/gitHub/ops_for_data_scientists/test/$(date +%s)
+#* * * * * /bin/bash /root/gitHub/ops_for_data_scientists/bash/crontab.sh
 
 ```
 
