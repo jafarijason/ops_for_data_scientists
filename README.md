@@ -830,6 +830,18 @@ cat ./pythons/test1.py
 python3 ./pythons/test1.py 
 ```
 
+```
+man grep
+cat /etc/passwd
+cat /etc/passwd | grep 'root'
+grep 'root' /etc/passwd
+
+cat ./data/geolocation.csv | grep 'Cal'  | more
+
+cat ./data/geolocation.csv | grep 'Cal'  | grep 'Roseville'
+cat ./data/geolocation.csv | grep 'Cal'  | grep 'Roseville' | grep '29'
+```
+
 # Basic analysis
 ## Word/symbol count
 
