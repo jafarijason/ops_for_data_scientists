@@ -241,7 +241,7 @@ For more information [hollywood](https://github.com/dustinkirkland/hollywood), [
         Having VM in IaaS provider like AWS, GCP, Azure
     </li>
      <li>
-        Having container like docker lynx and etc
+        Having container like docker and etc
     </li>
 </ul>
 
@@ -714,7 +714,7 @@ du -d 2 -h /
 du -d 2 -h /root
 ```
 
-## scp
+## scp, winscp
 ```
 #scp stands for secure copy and is a useful command we can use to send files to and from a remote instance.
 #Send to remote:
@@ -816,6 +816,22 @@ tree $(pwd)
 tmux
 ```
 
+## lynx
+```
+sudo apt install lynx
+lynx
+
+```
+## wget
+```
+cd /tmp 
+wget https://github.com/jafarijason/ops_for_data_scientists/raw/master/imgs/vscode-ssh3.png
+```
+
+## curl
+```
+curl ifconfig.me
+```
 
 ## dns server
 
