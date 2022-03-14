@@ -566,6 +566,18 @@ whatis bash
 man ls
 ```
 
+## add user in linux
+```
+sudo adduser test1
+
+sudo usermod -G sudo test1
+
+su - test1
+
+exit
+
+sudo deluser test1 --remove-home
+```
 
 ## touch 
 
@@ -833,6 +845,15 @@ wget https://github.com/jafarijason/ops_for_data_scientists/raw/master/imgs/vsco
 curl ifconfig.me
 ```
 
+# pv
+```
+cd /tmp 
+fallocate -l 1G test.img
+
+pv test.img > test3.img
+
+```
+
 ## dns server
 
 ```
@@ -975,6 +996,14 @@ grep -n 'Cal' ./data/geolocation.csv > ./test/new_example_data1.csv
 ```
 shuf -n 4 ./data/geolocation.csv
 tail -n +1 ./test/new_example_data1.csv | shuf -n 4
+```
+
+```
+sudo apt install athena-jot
+
+jot 10
+jot -r 5 1 100
+jot 10 555
 ```
 
 # [Awk](https://www.gnu.org/software/gawk/manual/gawk.html), [example](https://www.tutorialspoint.com/awk/awk_basic_examples.htm)
