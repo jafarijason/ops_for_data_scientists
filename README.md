@@ -710,6 +710,19 @@ nc -zv 127.0.0.1 20-100
 
 
 
+## crontab [#](https://crontab.guru/every-8-hours)
+```
+crontab -e
+
+cat /etc/crontab
+
+#touch /root/gitHub/ops_for_data_scientists/test/$(date +%s)
+
+```
+
+
+
+
 
 
 <br>
