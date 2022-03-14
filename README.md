@@ -737,6 +737,36 @@ cat  /etc/passwd | less
 cat  /etc/shadow | less
 ```
 
+## network
+
+```
+sudo apt install net-tools
+ifconfig
+
+ip add show
+ip a s
+
+ss
+ss -l4
+sudo ss -tulpn
+
+
+sudo lsof -i -P -n
+sudo lsof -i -P -n | grep LISTEN
+
+less /etc/services
+
+
+cat /etc/services
+grep  '22/tcp' /etc/services 
+
+# https://www.cyberciti.biz/faq/how-to-check-open-ports-in-linux-using-the-cli/
+sudo netstat
+sudo netstat -tulpn
+sudo netstat -tulpn | grep LISTEN
+
+```
+
 
 ## dns server
 
