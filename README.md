@@ -821,6 +821,19 @@ sudo systemctl status systemd-resolved.service
 systemd-resolve --status
 ```
 
+# Basic analysis
+## Word/symbol count
+
+```
+wc ./data/geolocation.csv
+```
+## Unique elements
+```
+uniq -u ./data/geolocation.csv
+
+cut -d"," -f2 ./data/geolocation.csv | uniq -u 
+
+```
 
 # Acquire data
 ## head /tail
@@ -859,6 +872,12 @@ cut -d"," -f2,5 ./data/geolocation.csv > ./test/new_example_data1.csv
 grep -n 'Cal' ./data/geolocation.csv 
 grep -n 'Cal' ./data/geolocation.csv > ./test/new_example_data1.csv
 
+```
+
+# Sampling
+```
+shuf -n 4 ./data/geolocation.csv
+tail -n +1 ./test/new_example_data1.csv | shuf -n 4
 ```
 
 # [Awk](https://www.gnu.org/software/gawk/manual/gawk.html), [example](https://www.tutorialspoint.com/awk/awk_basic_examples.htm)
