@@ -904,6 +904,18 @@ grep -c -w `whoami` /etc/*.*
 grep -s -c -w `whoami` /etc/*
 grep -l -s -w `whoami` /etc/*
 grep -L -s -w `whoami` /etc/*
+
+
+grep -H -w root /etc/passwd
+grep -H -w root /etc/passwd | cut -f 1 -d :
+grep -H -w root /etc/passwd | cut -f 2 -d :
+grep -H -w root /etc/passwd | cut -f 8 -d :
+
+grep -T -H -w root /etc/passwd
+
+grep -T -n -H -w root /etc/passwd
+
+grep -T -A 3 -B 3 -n -H -w root /etc/passwd
 ```
 
 # Basic analysis
