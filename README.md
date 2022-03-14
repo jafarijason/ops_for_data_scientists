@@ -557,6 +557,25 @@ man ls
 ```
 
 
+## touch 
+
+```
+touch <file name>
+```
+
+## cat
+
+```
+cat <file name>
+```
+```
+cat ./data/geolocation.csv | more
+cat ./data/geolocation.csv | less
+cat ./data/geolocation.csv | head
+cat ./data/geolocation.csv | tail
+```
+
+
 
 
 
