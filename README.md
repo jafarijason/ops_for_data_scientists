@@ -720,7 +720,12 @@ cat /etc/crontab
 
 ```
 
+## /etc/passwd, /etc/shadow
 
+```
+cat  /etc/passwd | less
+cat  /etc/shadow | less
+```
 
 
 
