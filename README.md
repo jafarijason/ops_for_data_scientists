@@ -814,8 +814,8 @@ tree $(pwd)
 # tmux
 ```
 tmux
-
 ```
+
 
 ## dns server
 
@@ -882,6 +882,12 @@ cat /etc/ssh/ssh_config | grep -v '#'
 cat /etc/ssh/ssh_config | grep -v ^#
 cat /etc/ssh/ssh_config | grep -v ^# | grep -v ^$
 
+grep 'root' /etc/passwd
+grep `whoami` /etc/passwd
+grep -c -w `whoami` /etc/*.*
+grep -s -c -w `whoami` /etc/*
+grep -l -s -w `whoami` /etc/*
+grep -L -s -w `whoami` /etc/*
 ```
 
 # Basic analysis
