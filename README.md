@@ -570,9 +570,13 @@ cat <file name>
 ```
 ```
 cat ./data/geolocation.csv | more
+more ./data/geolocation.csv
 cat ./data/geolocation.csv | less
+less ./data/geolocation.csv
 cat ./data/geolocation.csv | head
+head ./data/geolocation.csv
 cat ./data/geolocation.csv | tail
+tail ./data/geolocation.csv
 ```
 
 
