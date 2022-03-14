@@ -650,6 +650,23 @@ watch ls -la  -3
 
 ```
 
+## htop
+
+```
+htop
+```
+
+## mc
+```
+mc
+```
+
+## kill
+```
+kill -9 PID
+
+```
+
 
 
 
