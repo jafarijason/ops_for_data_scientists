@@ -811,6 +811,12 @@ tree ~
 tree $(pwd)
 ```
 
+# tmux
+```
+tmux
+
+```
+
 ## dns server
 
 ```
@@ -858,6 +864,23 @@ cat /var/log/syslog | grep 'root'
 
 cat ./data/mm
 cat ./data/mm | grep -v -e '^$'
+
+tail -f /var/log/auth.log | grep 'su'
+
+tail -f /var/log/auth.log | grep 'su' &
+
+grep -e j ./data/grepTest
+
+grep -f ./data/grepTest  /etc/passwd 
+
+grep -i -f ./data/grepTest  /etc/passwd 
+
+grep -i -v -f ./data/grepTest  /etc/passwd 
+
+cat /etc/ssh/ssh_config
+cat /etc/ssh/ssh_config | grep -v '#'
+cat /etc/ssh/ssh_config | grep -v ^#
+cat /etc/ssh/ssh_config | grep -v ^# | grep -v ^$
 
 ```
 
