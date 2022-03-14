@@ -345,6 +345,28 @@ ssh-copy-id <user name>@<ip or host name>
 
 
 
+
+## Remote ssh with vscode
+First you need already installed [visual studio code](https://code.visualstudio.com/download)
+<br>
+then you need to add remote ssh extension on your vs code
+<img src="imgs/vscode-ssh1.png" />
+<img src="imgs/vscode-ssh2.png" />
+<img src="imgs/vscode-ssh3.png" />
+<img src="imgs/vscode-ssh4.png" />
+<img src="imgs/vscode-ssh5.png" />
+
+once you connect it you have open vscode in your linux machine and you can do what ever you want
+
+<br>
+
+```
+cd < target folder >
+code .
+```
+
+
+
 ## git config
 
 ```
@@ -375,25 +397,6 @@ cd gitHub
 git clone git@github.com:jafarijason/ops_for_data_scientists.git
 cd ops_for_data_scientists
 
-```
-
-## Remote ssh with vscode
-First you need already installed [visual studio code](https://code.visualstudio.com/download)
-<br>
-then you need to add remote ssh extension on your vs code
-<img src="imgs/vscode-ssh1.png" />
-<img src="imgs/vscode-ssh2.png" />
-<img src="imgs/vscode-ssh3.png" />
-<img src="imgs/vscode-ssh4.png" />
-<img src="imgs/vscode-ssh5.png" />
-
-once you connect it you have open vscode in your linux machine and you can do what ever you want
-
-<br>
-
-```
-cd < target folder >
-code .
 ```
 
 
