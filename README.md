@@ -579,6 +579,33 @@ cat ./data/geolocation.csv | tail
 tail ./data/geolocation.csv
 ```
 
+## history
+
+```
+history
+```
+
+## clear
+
+```
+clear
+```
+
+## cp, mv
+
+```
+cp ./imgs/distro-family-tree.png /tmp
+mkdir -p /tmp/test
+cp ./imgs/*.png /tmp/test
+cp -r imgs /tmp/test/imgs-copy
+cp -R imgs /tmp/test/imgs-copy
+
+
+mv /tmp/distro-family-tree.png /tmp/distro-family-tree2.png
+
+rm -rf /tmp/test
+```
+
 
 
 
