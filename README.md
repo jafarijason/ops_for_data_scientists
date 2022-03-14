@@ -478,6 +478,7 @@ YOUR_USERNAME_HERE ALL=(ALL) NOPASSWD: ALL
 ## echo, date, whoami
 
 ### echo
+#### [File permisions in <pos>ix Os](https://www.guru99.com/file-permissions.html)
 ```
 man echo
 echo "Hello World! "
