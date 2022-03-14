@@ -801,10 +801,15 @@ wall
 ```
 find $(pwd) -name geolocation.csv
 find $(pwd) -type d -name data
-
-
 ```
 
+# tree 
+```
+tree
+tree /
+tree ~
+tree $(pwd)
+```
 
 ## dns server
 
@@ -838,8 +843,19 @@ grep 'root' /etc/passwd
 
 cat ./data/geolocation.csv | grep 'Cal'  | more
 
+grep 'Cal' < ./data/geolocation.csv
+
 cat ./data/geolocation.csv | grep 'Cal'  | grep 'Roseville'
 cat ./data/geolocation.csv | grep 'Cal'  | grep 'Roseville' | grep '29'
+
+ls -la | grep 'data'
+
+tree /
+tree / | grep 'hollywood.png'
+
+cat /var/log/syslog
+cat /var/log/syslog | grep 'root'
+
 ```
 
 # Basic analysis
