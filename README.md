@@ -650,10 +650,32 @@ watch ls -la  -3
 
 ```
 
+
+## ps
+
+```
+ps
+ps -a
+```
+
+
+
+## top
+
+```
+top
+```
 ## htop
 
 ```
 htop
+```
+
+## btop
+
+```
+# sudo snap install btop
+btop
 ```
 
 ## mc
@@ -665,6 +687,15 @@ mc
 ```
 kill -9 PID
 
+```
+
+
+
+
+## nc 
+```
+nc -zv 10.0.250.2 22-500
+nc -zv 127.0.0.1 20-100
 ```
 
 
