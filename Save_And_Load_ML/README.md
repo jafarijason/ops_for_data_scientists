@@ -25,3 +25,18 @@ pip freeze  >  requirements.txt
 ```
 python save_model.py
 ```
+
+```
+pip install "fastapi[all]"
+# or
+pip install fastapi
+pip install "uvicorn[standard]"
+
+pip freeze  >  requirements.txt
+
+```
+
+```
+uvicorn main:app --reload
+uvicorn main:app --host 0.0.0.0  --reload
+```
