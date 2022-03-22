@@ -1,0 +1,4 @@
+.git/
+.idea/
+venv/
+finalized_model.sav
