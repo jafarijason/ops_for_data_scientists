@@ -34,4 +34,22 @@ docker run busybox:latest ls -lah
 
 docker rm <CI or name>
 
+docker pull ubuntu:latest
+
+docker images | grep 'ubuntu'
+
+docker run -it ubuntu /bin/bash
+
+cat /proc/cpuinfo  | grep "core"
+
+cat /etc/os-release
+
+docker start <container name or id>
+docker ps
+docker stop <container name or id>
+docker rm <CI or name>
+
+
+# de attach mode
 ```
+
