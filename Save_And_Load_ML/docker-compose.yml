@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+
+    ml_save_load_serve:
+        image: jasonjafari/ml_save_load_serve:1.1.1
+        build:
+          context: .
+          dockerfile: './Dockerfile'
+        ports:
+          - 8001:8000
