@@ -51,5 +51,25 @@ docker rm <CI or name>
 
 
 # de attach mode
+
+docker run -it -d ubuntu:latest /bin/bash
+
+# port forwarding
+docker run -it -d -p 1234:1234 python:latest python -m http.server 1234
 ```
+
+```
+# Access shell to running container
+docker run -it -d  --name test1 -p 1234:1234  python:latest python -m http.server 1234
+docker exec -it test1
+
+touch /home/test.txt
+mkdir -p /home/testDir
+
+exit
+
+docker stop test1
+```
+
+
 
