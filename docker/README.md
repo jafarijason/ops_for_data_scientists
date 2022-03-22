@@ -32,5 +32,6 @@ docker run busybox:latest echo Hello World
 
 docker run busybox:latest ls -lah
 
+docker rm <CI or name>
 
 ```
