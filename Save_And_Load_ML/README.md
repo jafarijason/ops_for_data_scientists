@@ -46,3 +46,10 @@ uvicorn main:app --host 0.0.0.0  --reload
 docker build -t myimage .
 docker run -d --name mycontainer -p 8000:8000 myimage
 ```
+
+```
+docker-compose build
+docker-compose up
+docker-compose down
+docker-compose up -d
+```
