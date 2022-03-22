@@ -2,8 +2,3 @@
 
 ## [History of docker](https://www.slideshare.net/Docker/introduction-to-docker-2017)
 
-<img src="../imgs/historyOfDocker.png" />
-<img src="../imgs/historyOfDocker1.png" />
-<img src="../imgs/historyOfDocker2.png" />
-<img src="../imgs/historyOfDocker3.png" />
-<img src="../imgs/historyOfDocker4.png" />
