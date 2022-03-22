@@ -5,3 +5,5 @@
 <img src="../imgs/historyOfDocker.png" />
 <img src="../imgs/historyOfDocker1.png" />
 <img src="../imgs/historyOfDocker2.png" />
+<img src="../imgs/historyOfDocker3.png" />
+<img src="../imgs/historyOfDocker4.png" />
