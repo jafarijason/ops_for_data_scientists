@@ -2,3 +2,6 @@
 
 ## [History of docker](https://www.slideshare.net/Docker/introduction-to-docker-2017)
 
+
+## [Docker Usecases](https://medium.com/@BeNitinAgarwal/docker-usecases-3b62f4d68bc4)
+
