@@ -14,11 +14,11 @@ sudo pip3 install virtualenv
 
 ```
 cd Save_And_Load_ML
-virtualenv env
+virtualenv venv
 source ./venv/bin/activate
 pip install pandas sklearn
 
-pip freeze  >  requirements.txt
+pip freeze > requirements.txt
 
 ```
 
