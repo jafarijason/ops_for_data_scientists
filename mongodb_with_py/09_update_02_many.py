@@ -14,11 +14,9 @@ mydb = myclient["mydatabase"]
 
 mycol = mydb["customers"]
 
-mydict = {
-    "name": "Jason Jafari",
-    "address": "Highway 371"
-}
+myquery = { "name": "Jason Jafari" }
+newvalues = { "$set": { "name": "Minnie" } }
 
-x = mycol.insert_one(mydict)
+x = mycol.update_many(myquery, newvalues)
 
-print(x.inserted_id)
+print(x.modified_count, "documents updated.")

@@ -14,11 +14,10 @@ mydb = myclient["mydatabase"]
 
 mycol = mydb["customers"]
 
-mydict = {
-    "name": "Jason Jafari",
-    "address": "Highway 371"
-}
+myquery = { "name": "Jason Jafari" }
 
-x = mycol.insert_one(mydict)
+x = mycol.delete_many({})
 
-print(x.inserted_id)
+print(x.deleted_count, " documents deleted.")
+
+

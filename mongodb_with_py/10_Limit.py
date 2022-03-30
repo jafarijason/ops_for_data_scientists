@@ -14,11 +14,9 @@ mydb = myclient["mydatabase"]
 
 mycol = mydb["customers"]
 
-mydict = {
-    "name": "Jason Jafari",
-    "address": "Highway 371"
-}
+myresult = mycol.find().limit(5)
 
-x = mycol.insert_one(mydict)
+#print the result:
+for x in myresult:
+  print(x)
 
-print(x.inserted_id)

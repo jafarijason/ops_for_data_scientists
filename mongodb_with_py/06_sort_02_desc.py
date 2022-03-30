@@ -14,11 +14,7 @@ mydb = myclient["mydatabase"]
 
 mycol = mydb["customers"]
 
-mydict = {
-    "name": "Jason Jafari",
-    "address": "Highway 371"
-}
+mydoc = mycol.find().sort("name", -1)
 
-x = mycol.insert_one(mydict)
-
-print(x.inserted_id)
+for x in mydoc:
+  print(x)

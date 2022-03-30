@@ -14,11 +14,5 @@ mydb = myclient["mydatabase"]
 
 mycol = mydb["customers"]
 
-mydict = {
-    "name": "Jason Jafari",
-    "address": "Highway 371"
-}
+mycol.drop()
 
-x = mycol.insert_one(mydict)
-
-print(x.inserted_id)

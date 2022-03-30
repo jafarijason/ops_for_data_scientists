@@ -14,11 +14,10 @@ mydb = myclient["mydatabase"]
 
 mycol = mydb["customers"]
 
-mydict = {
-    "name": "Jason Jafari",
-    "address": "Highway 371"
-}
+myquery = { "name": "Jason Jafari" }
+newvalues = { "$set": { "address": "Canyon 123" } }
 
-x = mycol.insert_one(mydict)
+mycol.update_one(myquery, newvalues)
 
-print(x.inserted_id)
+for x in mycol.find():
+  print(x)
