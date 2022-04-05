@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   ml_save_load_serve:
-    image: jafarijason/ml_save_load_serve:1.1.1
+    image: jafarijason/ml_save_load_serve:1.0.1
     networks:
       - traefik-public
     deploy:
@@ -12,7 +12,7 @@ services:
       placement:
         constraints:
           - node.platform.os == linux
-      replicas: 4
+      replicas: 10
       labels:
         - traefik.enable=true
         - traefik.docker.network=traefik-public
