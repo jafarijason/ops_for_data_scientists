@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  ml_save_load_serve:
+    image: jafarijason/ml_save_load_serve:1.1.1
+    networks:
+      - traefik-public
+    deploy:
+      mode: replicated
+      restart_policy:
+          condition: any
+      placement:
+        constraints:
+          - node.platform.os == linux
+      replicas: 4
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=traefik-public
+        - traefik.constraint-label=traefik-public
+        - traefik.http.routers.ml_save_load_serve-http.rule=Host(`${DOMAIN?Variable not set}`)
+        - traefik.http.routers.ml_save_load_serve-http.entrypoints=http
+        - traefik.http.routers.ml_save_load_serve-http.middlewares=https-redirect
+        - traefik.http.routers.ml_save_load_serve-https.rule=Host(`${DOMAIN?Variable not set}`)
+        - traefik.http.routers.ml_save_load_serve-https.entrypoints=https
+        - traefik.http.routers.ml_save_load_serve-https.tls=true
+        - traefik.http.routers.ml_save_load_serve-https.tls.certresolver=le
+        - traefik.http.services.ml_save_load_serve.loadbalancer.server.port=8000
+      update_config:
+        parallelism: 1
+        order: start-first
+        failure_action: rollback
+        delay: 5s
+      rollback_config:
+        parallelism: 0
+        order: stop-first
+
+
+
+
+networks:
+  traefik-public:
+    external: true

@@ -4,6 +4,8 @@ import pandas
 from sklearn import model_selection
 from sklearn.linear_model import LogisticRegression
 import json
+import socket
+
 
 
 filename = 'finalized_model.sav'
@@ -15,7 +17,10 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World!"}
+    return {
+        "message": "Hello World!",
+        "hostName": socket.gethostname()
+    }
 
 
 @app.post("/loadAndServe")

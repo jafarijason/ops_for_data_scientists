@@ -53,3 +53,11 @@ docker-compose up
 docker-compose down
 docker-compose up -d
 ```
+
+# [Docker Swarm Rocks](https://dockerswarm.rocks/)
+
+```
+export DOMAIN=ml.jasonjafari.com
+export NODE_ID=$(docker info -f '{{.Swarm.NodeID}}')
+docker stack deploy -c saveMl.yml  ml --resolve-image=always --with-registry-auth --prune
+```
