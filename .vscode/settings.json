@@ -1,9 +1,13 @@
 {
     "cSpell.words": [
+        "fastapi",
         "imgs",
         "pedi",
         "plas",
         "preg",
-        "sklearn"
+        "sklearn",
+        "uvicorn",
+        "venv",
+        "virtualenv"
     ]
 }
