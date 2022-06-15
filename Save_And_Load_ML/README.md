@@ -10,6 +10,7 @@ sudo apt install python3-pip
 ```
 python3 -m pip install --user virtualenv
 sudo pip3 install virtualenv
+apt install python3-virtualenv
 ```
 
 ```
