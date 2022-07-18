@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import pickle 
+import socket
 
 
 filename = 'myModel.pkl'
@@ -13,7 +14,10 @@ app = FastAPI()
 
 @app.get("/home")
 async def root():
-    return {"message": "Hello FastApi!"}
+    return {
+        "message": "Hello FastApi!",
+        "hostName": socket.gethostname()
+    }
 
 
 class Item(BaseModel):
