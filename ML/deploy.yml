@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   ml_fastapi_production:
-    image: jafarijason/ml_fastapi_production:1.0.3
+    image: jafarijason/ml_fastapi_production:1.0.4
     networks:
       - traefik-public
     deploy:
@@ -26,7 +26,7 @@ services:
         - traefik.http.routers.ml_fastapi_production-https.tls.certresolver=le
         - traefik.http.services.ml_fastapi_production.loadbalancer.server.port=8000
       update_config:
-        parallelism: 1
+        parallelism: 3
         order: start-first
         failure_action: rollback
         delay: 5s

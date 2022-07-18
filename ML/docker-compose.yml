@@ -1,7 +1,7 @@
 version: '3.8'
 services:
     ml_fastapi_production:
-        image: jafarijason/ml_fastapi_production:1.0.3
+        image: jafarijason/ml_fastapi_production:1.0.4
         build:
             context: .
             dockerfile: ./Dockerfile
