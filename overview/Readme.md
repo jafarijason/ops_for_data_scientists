@@ -1,3 +1,15 @@
+# Outline
+
+<ul>
+    <li>How to save ML model in a file</li>
+    <li>How to load and use saved model</li>
+    <li>How FastAPI can help us for serving our ml model</li>
+    <li>How Docker can help us to containerize out app</li>
+    <li>How docker-compose can save our time for working with docker</li>
+    <li>How we can deploy our docker image on cloud (AWS EC2 VM)</li>
+    <li>How connect our Visual studio code te the remote linux server server</li>
+</ul>
+
 # [Save and Load Machine Learning Models in Python with scikit-learn](https://machinelearningmastery.com/save-load-machine-learning-models-python-scikit-learn/)
 
 ## Make sure you have python3 installed in your machine
@@ -28,7 +40,8 @@ python3 save_model.py
 python3 loadAndPredict.py
 ```
 
-# [FastAPI](https://fastapi.tiangolo.com/)
+# [FastAPI](https://github.com/jafarijason/ops_for_data_scientists/tree/master/fastapi)
+
 
 ## Installing FastAPI
 ```
@@ -47,7 +60,7 @@ uvicorn main:app --reload
 uvicorn main:app --host 0.0.0.0  --reload
 ```
 
-# Docker
+# [Docker](https://github.com/jafarijason/ops_for_data_scientists/tree/master/docker)
 
 
 ```
@@ -60,6 +73,14 @@ docker-compose build
 docker-compose up
 docker-compose down
 docker-compose up -d
+```
+
+```
+docker login
+```
+
+```
+docker-compose push
 ```
 
 # [Docker Swarm Rocks](https://dockerswarm.rocks/)
