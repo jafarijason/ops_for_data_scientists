@@ -16,24 +16,11 @@ python3 -m venv venv
 ```
 source ./venv/bin/activate
 pip3 install -r requirements.txt
-
-#pip3 install pandas sklearn scikit-learn scipy matplotlib
-
-#pip3 freeze > requirements.txt
 ```
+ 
 
 ```
-cd Save_And_Load_ML
-virtualenv venv
-source ./venv/bin/activate
-pip install pandas sklearn
-
-pip freeze > requirements.txt
-
-```
-
-```
-python save_model.py
+python3 save_model.py
 ```
 
 ```
