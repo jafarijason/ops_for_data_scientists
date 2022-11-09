@@ -1,0 +1,5 @@
+venv
+finalized_model.sav
+*.pyc
+__pycache__
+__pycache__/

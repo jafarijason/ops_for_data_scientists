@@ -12,11 +12,14 @@ python3 -m pip install --user virtualenv
 ```
 python3 -m venv venv
 ```
+
 ```
 source ./venv/bin/activate
-pip install pandas sklearn
+pip3 install -r requirements.txt
 
-pip freeze > requirements.txt
+#pip3 install pandas sklearn scikit-learn scipy matplotlib
+
+#pip3 freeze > requirements.txt
 ```
 
 ```
