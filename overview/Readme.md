@@ -17,12 +17,19 @@ python3 -m venv venv
 source ./venv/bin/activate
 pip3 install -r requirements.txt
 ```
- 
 
+### For save model
 ```
 python3 save_model.py
 ```
 
+### For load model and prediction
+```
+python3 loadAndPredict.py
+```
+
+
+## Installing FastAPI
 ```
 pip install "fastapi[all]"
 # or
