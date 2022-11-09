@@ -28,27 +28,31 @@ python3 save_model.py
 python3 loadAndPredict.py
 ```
 
+# [FastAPI](https://fastapi.tiangolo.com/)
 
 ## Installing FastAPI
 ```
-pip install "fastapi[all]"
+pip3 install "fastapi[all]"
 # or
-pip install fastapi
-pip install "uvicorn[standard]"
+pip3 install fastapi
+pip3 install "uvicorn[standard]"
 
-pip freeze  >  requirements.txt
+pip3 freeze  >  requirements.txt
 
 ```
+
 
 ```
 uvicorn main:app --reload
 uvicorn main:app --host 0.0.0.0  --reload
 ```
 
+# Docker
+
 
 ```
-docker build -t myimage .
-docker run -d --name mycontainer -p 8000:8000 myimage
+docker build -t overview:1.0.1 .
+docker run -d --name myContainerOverView -p 8000:8000 overview:1.0.1
 ```
 
 ```

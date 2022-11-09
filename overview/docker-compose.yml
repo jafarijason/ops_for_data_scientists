@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+    ml_fastapi_overview:
+        image: jafarijason/ml_fastapi_overview:1.0.1
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        ports:
+          - 8020:8000
