@@ -62,6 +62,7 @@ uvicorn main:app --host 0.0.0.0  --reload
 
 # [Docker](https://github.com/jafarijason/ops_for_data_scientists/tree/master/docker)
 
+## [How to create Docker Images with a Dockerfile on Ubuntu 20.04 LTS](https://www.howtoforge.com/tutorial/how-to-create-docker-images-with-dockerfile/)
 
 ```
 docker build -t overview:1.0.1 .

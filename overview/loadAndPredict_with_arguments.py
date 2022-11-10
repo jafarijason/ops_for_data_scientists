@@ -1,5 +1,5 @@
 from sklearn.ensemble import IsolationForest
-import pickle 
+import pickle
 import sys
 
 myInput=[[int(sys.argv[1])], [int(sys.argv[2])], [int(sys.argv[3])]]

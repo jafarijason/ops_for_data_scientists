@@ -10,10 +10,7 @@ COPY requirements.txt /code
 
 RUN pip install --no-cache-dir -r /code/requirements.txt
 
-RUN ls -la
-
 RUN python save_model.py
 
-RUN ls -la
-
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0"]
+EXPOSE 8000
