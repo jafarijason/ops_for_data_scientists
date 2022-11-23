@@ -90,6 +90,13 @@ docker login
 docker-compose push
 ```
 
+# [Container Orchestration](https://medium.com/@thamilini/container-orchestration-d22c3bd3de7b)
+
+# [Container Orchestration](https://medium.com/onfido-tech/container-orchestration-with-kubernetes-an-overview-da1d39ff2f91)
+
+# [Container Orchestration and Management Options](https://k21academy.com/docker-kubernetes/container-orchestration-and-management-options/)
+
+
 # [Docker Swarm Rocks](https://dockerswarm.rocks/)
 
 ```
