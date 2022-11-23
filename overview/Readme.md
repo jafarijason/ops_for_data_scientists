@@ -102,5 +102,5 @@ docker-compose push
 ```
 export DOMAIN=ml.jasonjafari.com
 export NODE_ID=$(docker info -f '{{.Swarm.NodeID}}')
-docker stack deploy -c saveMl.yml  ml --resolve-image=always --with-registry-auth --prune
+docker stack deploy -c serveModel.yml  ml --resolve-image=always --with-registry-auth --prune
 ```

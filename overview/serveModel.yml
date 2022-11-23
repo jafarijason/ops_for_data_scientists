@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  ml_fastapi_overview:
+    image: jafarijason/ml_fastapi_overview:1.0.10
+    networks:
+      - traefik-public
+    deploy:
+      mode: replicated
+      restart_policy:
+          condition: any
+      placement:
+        constraints:
+          - node.platform.os == linux
+      replicas: 1
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=traefik-public
+        - traefik.constraint-label=traefik-public
+        - traefik.http.routers.ml_fastapi_overview-http.rule=Host(`${DOMAIN?Variable not set}`)
+        - traefik.http.routers.ml_fastapi_overview-http.entrypoints=http
+        - traefik.http.routers.ml_fastapi_overview-http.middlewares=https-redirect
+        - traefik.http.routers.ml_fastapi_overview-https.rule=Host(`${DOMAIN?Variable not set}`)
+        - traefik.http.routers.ml_fastapi_overview-https.entrypoints=https
+        - traefik.http.routers.ml_fastapi_overview-https.tls=true
+        - traefik.http.routers.ml_fastapi_overview-https.tls.certresolver=le
+        - traefik.http.services.ml_fastapi_overview.loadbalancer.server.port=8000
+      update_config:
+        parallelism: 1
+        order: start-first
+        failure_action: rollback
+        delay: 5s
+      rollback_config:
+        parallelism: 0
+        order: stop-first
+
+
+
+
+networks:
+  traefik-public:
+    external: true
