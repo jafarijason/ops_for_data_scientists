@@ -60,7 +60,13 @@ uvicorn main:app --reload
 uvicorn main:app --host 0.0.0.0  --reload
 ```
 
+
 # [Docker](https://github.com/jafarijason/ops_for_data_scientists/tree/master/docker)
+
+
+## [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+
+## [How To Install and Use Docker Compose on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04)
 
 ## [How to create Docker Images with a Dockerfile on Ubuntu 20.04 LTS](https://www.howtoforge.com/tutorial/how-to-create-docker-images-with-dockerfile/)
 
