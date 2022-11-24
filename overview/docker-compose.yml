@@ -1,7 +1,8 @@
 version: '3.8'
 services:
     ml_fastapi_overview:
-        image: jafarijason/ml_fastapi_overview:1.0.10
+        platform: linux/amd64
+        image: jafarijason/ml_fastapi_overview:1.0.14
         build:
             context: .
             dockerfile: ./Dockerfile
